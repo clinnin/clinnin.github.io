@@ -17,7 +17,13 @@ shinyUI(
       h4('BMI Category:'),
       verbatimTextOutput("msg"),
       h4('BMI Prime:'),
-      verbatimTextOutput("BMIprime")
+      verbatimTextOutput("BMIprime"),
+           
+      tags$div(class="header", checked=NA,
+               tags$a(href="http://rpubs.com/clinnin/29900", "Documentation and Help")
+      )
+    
+    
      
     )
   )
