@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Andrew Clinnin">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator</h1>
+    <h2>Supporting Documentation</h2>
+    <p>Andrew Clinnin<br/>Student, Developing Data Products</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>According to the National Institute of Health, &quot;Reaching and maintaining a healthy weight is important for overall health and can help you prevent and control many diseases and conditions.&quot;</p>
+
+<p>Body Mass Index has long provided a way to conveniently measure an adult&#39;s weight-to-height ratio to determine if they fall into or outside of a healthy weight category.</p>
+
+<h1>BMI Table</h1>
+
+<table><thead>
+<tr>
+<th>BMI</th>
+<th>BMI&#39;</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;15</td>
+<td>&lt;0.6</td>
+<td>Very severely underweight</td>
+</tr>
+<tr>
+<td>15.0 - 16.0</td>
+<td>0.6 - 0.64</td>
+<td>Severely underweight</td>
+</tr>
+<tr>
+<td>16.0 - 18.5</td>
+<td>0.64 - 0.74</td>
+<td>Underweight</td>
+</tr>
+<tr>
+<td>18.5 - 25</td>
+<td>0.74 - 1.0</td>
+<td>Healthy Weight</td>
+</tr>
+<tr>
+<td>25 - 30</td>
+<td>1.0 - 1.2</td>
+<td>Overweight</td>
+</tr>
+<tr>
+<td>30 - 35</td>
+<td>1.2 - 1.4</td>
+<td>Moderately Obese</td>
+</tr>
+<tr>
+<td>35 - 40</td>
+<td>1.4 - 1.6</td>
+<td>Severely Obese</td>
+</tr>
+<tr>
+<td>&gt;40</td>
+<td>&gt; 1.6</td>
+<td>Very Severely Obese</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Concepts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Body Mass Index (BMI) is simply the ratio of weight to height squared. Originally calculated in metric, a multiplier is used to convert to imperial units and accomodate inches and pounds. 
+\[
+BMI = \frac{Weight}{Height^2}*703.06957964
+\]</p>
+
+<p>BMI Prime (BMI&#39;) is a unit-free ratio of BMI to the maximum healthy BMI(25.) This can also be expressed as the ratio of actual weight to weight for a given height at BMI of 25. This gives the percent over or under max ideal weight. (e.g. BMI&#39; 1.08 = 8% overweight)</p>
+
+<p>\[
+BMI' = \frac{BMI(Actual)}{BMI(Max Healthy)} = \frac{Weight(Actual)}{Weight(BMI 25)}
+\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Notes</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Weight entered must be in pounds, and hight entered must be in total inches. A helpful point of reference is that 5 feet = 60 inches, so if you are 5 feet 8 inches tall, this is 68 inches.</li>
+<li>The BMI calculation is intended for people over 20 years of age. </li>
+<li>Some physical conditions, including people with extreme heights or muscle mass, may lead to incorrect assessment of weight category with this tool. If you have questions or concerns about your health and/or weight, you should consult a physician.</li>
+<li>For more information: <a href="http://www.nhlbi.nih.gov/health/educational/lose_wt/index.htm">http://www.nhlbi.nih.gov/health/educational/lose_wt/index.htm</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Concepts'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Notes'>
+         3
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
